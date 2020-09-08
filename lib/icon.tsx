@@ -1,11 +1,16 @@
 import React from 'react'
+import './icons/labi.svg'
+interface IconProps {
+  name: string
+}
 
-var a = 1
-var b = 2
-console.log(a, b)
-function Icon() {
+const Icon: React.FunctionComponent<IconProps> = props => {
   return (
-    <span>ic1111111111111112222222222222222222222222211111111111111111111111on</span>
+    <span>
+      <svg>
+        <use xlinkHref={`#${props.name}`}></use>
+      </svg>
+    </span>
   )
 }
 export default Icon

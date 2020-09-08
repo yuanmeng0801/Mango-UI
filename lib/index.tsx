@@ -1,5 +1,10 @@
-import Icon from './icon'
 import ReactDOM from 'react-dom'
 import React from 'react'
+import Icon from './icon'
 
-ReactDOM.render(<Icon />, document.body)
+ReactDOM.render(
+  <div>
+    <Icon name='labi' />
+  </div>,
+  document.getElementById('root')
+)

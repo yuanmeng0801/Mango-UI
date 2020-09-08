@@ -33,6 +33,16 @@ module.exports = {
   },
   plugins: ['react', 'unicorn', 'promise', '@typescript-eslint'],
   rules: {
+    'import/extensions': [
+      ERROR,
+      'ignorePackages',
+      {
+        ts: 'never',
+        tsx: 'never',
+        json: 'never',
+        js: 'never',
+      },
+    ],
     'no-var': OFF,
     semi: OFF,
     'linebreak-style': [0, 'error', 'window'],
