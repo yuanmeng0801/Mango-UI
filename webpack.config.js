@@ -24,6 +24,10 @@ module.exports = {
         test: /\.svg$/,
         loader: 'svg-sprite-loader', // 把svg放到html里
       },
+      {
+        test: /\.less$/,
+        use: ['style-loader', 'css-loader', 'less-loader'],
+      },
     ],
   },
 }

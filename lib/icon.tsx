@@ -1,16 +1,16 @@
 import React from 'react'
 import './icons/labi.svg'
-interface IconProps {
-  name: string
+import './icon.less'
+// 定义Icon组件的props类型为SVGAttributes
+interface IconProps extends React.SVGAttributes<SVGElement> {
+  type: string
 }
 
 const Icon: React.FunctionComponent<IconProps> = props => {
   return (
-    <span>
-      <svg>
-        <use xlinkHref={`#${props.name}`}></use>
-      </svg>
-    </span>
+    <svg className='mango-icon' {...props}>
+      <use xlinkHref={`#${props.type}`}></use>
+    </svg>
   )
 }
 export default Icon
