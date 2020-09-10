@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom'
 import React from 'react'
-import Icon from './icon'
+import Icon from './index'
 
 const fn: React.MouseEventHandler = e => {
   console.dir(e)
