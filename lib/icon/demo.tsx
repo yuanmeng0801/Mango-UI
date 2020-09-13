@@ -8,7 +8,7 @@ const fn: React.MouseEventHandler = e => {
 }
 ReactDOM.render(
   <div>
-    <Icon type='labi' onClick={fn} />
+    <Icon type='add' onClick={fn} size='m' color='red' />
   </div>,
   document.getElementById('root')
 )
