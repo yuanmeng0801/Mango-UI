@@ -9,7 +9,7 @@ interface IconProps extends React.SVGAttributes<SVGElement> {
 
 const Icon: React.FunctionComponent<IconProps> = ({
   type,
-  className,
+  className = '',
   size = '6',
   ...restProps
 }) => {

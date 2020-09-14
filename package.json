@@ -7,7 +7,8 @@
   "scripts": {
     "test": "cross-env NODE_ENV=test jest --config=jest.config.js --runInBand",
     "start": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.dev.js",
-    "build": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js"
+    "build": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js",
+    "xxx": "cross-env NODE_ENV=test JEST_JUNIT_OUTPUT=./test-results/jest/results.xml jest --config=jest.config.js"
   },
   "repository": {
     "type": "git",
@@ -46,6 +47,7 @@
     "eslint-plugin-unicorn": "^21.0.0",
     "html-webpack-plugin": "^4.3.0",
     "jest": "^26.4.2",
+    "jest-junit": "^11.1.0",
     "less": "^3.12.2",
     "less-loader": "^7.0.1",
     "react-test-renderer": "^16.13.1",

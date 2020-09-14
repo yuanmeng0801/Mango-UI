@@ -2,11 +2,10 @@
 
 exports[`icon render successfully 1`] = `
 <svg
-  className="mango-icon"
-  type="labi"
+  className="mango-icon mango-icon-6 "
 >
   <use
-    xlinkHref="#labi"
+    xlinkHref="#add"
   />
 </svg>
 `;
