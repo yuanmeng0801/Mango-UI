@@ -41,7 +41,7 @@ const createSvgSprite = () => {
   </svg>
   `
 }
-
+// 将svg添加到body标签后
 const renderSprite = () => {
   if (!document) {
     return

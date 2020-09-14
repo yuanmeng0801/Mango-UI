@@ -10,14 +10,16 @@ interface IconProps extends React.SVGAttributes<SVGElement> {
 const Icon: React.FunctionComponent<IconProps> = ({
   type,
   className,
-  size = 'm',
+  size = '6',
   ...restProps
 }) => {
   useEffect(() => {
     renderSprite()
   }, [])
   return (
-    <svg className={`mango-icon mango-icon-${size}`} {...restProps}>
+    <svg
+      className={`mango-icon mango-icon-${size} ${className}`}
+      {...restProps}>
       <use xlinkHref={`#${type}`}></use>
     </svg>
   )
