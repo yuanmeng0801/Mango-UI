@@ -1,21 +1,25 @@
 {
   "name": "mango-ui",
   "version": "1.0.0",
-  "description": "",
+  "description": "A UI component library based on React",
   "main": "index.js",
   "types": "dist/lib/index",
   "scripts": {
     "test": "cross-env NODE_ENV=test jest --config=jest.config.js --runInBand",
     "start": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js",
-    "xxx": "cross-env NODE_ENV=test JEST_JUNIT_OUTPUT=./test-results/jest/results.xml jest --config=jest.config.js"
+    "ci": "cross-env NODE_ENV=test jest --config=jest.config.js"
+  },
+  "jest-junit": {
+    "outputName": "results.xml",
+    "outputDirectory": "./test-results/jest/"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yuanmeng0801/Mango-UI.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "1225610005@qq.com",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/yuanmeng0801/Mango-UI/issues"
