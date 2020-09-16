@@ -1,9 +1,12 @@
 {
-  "name": "mango-ui",
-  "version": "1.0.0",
+  "name": "midnight-design-test",
+  "version": "0.0.2",
   "description": "A UI component library based on React",
-  "main": "index.js",
+  "main": "./index.tsx",
   "types": "dist/lib/index",
+  "files": [
+    "dist/**/*"
+  ],
   "scripts": {
     "test": "cross-env NODE_ENV=test jest --config=jest.config.js --runInBand",
     "start": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.dev.js",
