@@ -2,7 +2,7 @@
 
 exports[`icon render successfully 1`] = `
 <svg
-  className="mango-icon mango-icon-6 "
+  className="night-with-icon night-with-icon-6 "
 >
   <use
     xlinkHref="#add"

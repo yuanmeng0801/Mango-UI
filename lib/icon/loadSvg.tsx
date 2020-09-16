@@ -32,7 +32,7 @@ const createSvgSprite = () => {
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink"
-    id="__MANGO_UI_SVG_SPRITE__"
+    id="__NIGHT_WITH_UI_SVG_SPRITE__"
     style="display:none;overflow:hidden;width:0;height:0"
   >
     <defs>
@@ -46,7 +46,9 @@ const renderSprite = () => {
   if (!document) {
     return
   }
-  const isSpriteExisting = document.getElementById('__MANGO_UI_SVG_SPRITE__')
+  const isSpriteExisting = document.getElementById(
+    '__NIGHT_WITH_UI_SVG_SPRITE__'
+  )
   if (!isSpriteExisting) {
     // insertAdjacentHTML方法将字符串解析为dom，并插入到指定位置
     document.body.insertAdjacentHTML('afterbegin', createSvgSprite())

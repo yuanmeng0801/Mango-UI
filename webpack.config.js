@@ -1,9 +1,6 @@
 const path = require('path')
 module.exports = {
   mode: 'production',
-  entry: {
-    index: './lib/index.tsx',
-  },
   resolve: {
     // 当引入文件时，默认文件后缀，ts必须要配置，不然默认是js文件，就会报错
     extensions: ['.ts', '.tsx', '.js', '.jsx'],
